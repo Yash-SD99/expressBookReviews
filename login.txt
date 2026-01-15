@@ -1,4 +1,5 @@
 curl -X POST http://localhost:5000/customer/login \
 -H "Content-Type: application/json" \
--d '{"username":"testuser","password":"test123"}'
-{"message":"Invalid login credentials"}
+-d '{"username":"testuser","password":"test123"}' \
+-c cookie.txt
+{"message":"User successfully logged in"}
